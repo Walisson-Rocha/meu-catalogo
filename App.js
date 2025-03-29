@@ -169,9 +169,13 @@ export const Filme = ({ nome, ano, diretor, tipo, capa }) => {
     <View style={styles.card}>
       <Image source={{ uri: capa }} style={styles.image} />
       <Text style={styles.cardTitle}>{nome}</Text>
+
       <Text style={styles.cardText}>Ano: {ano}</Text>
+
       <Text style={styles.cardText}>Diretor: {diretor}</Text>
+
       <Text style={styles.cardText}>Gênero: {tipo}</Text>
+
     </View>
   );
 };
@@ -181,7 +185,9 @@ export const Serie = ({ nome, ano, diretor, temporadas, capa }) => {
   return (
     <View style={styles.card}>
       <Image source={{ uri: capa }} style={styles.image} />
+
       <Text style={styles.cardTitle}>{nome}</Text>
+      
       <Text style={styles.cardText}>Ano: {ano}</Text>
       <Text style={styles.cardText}>Diretor: {diretor}</Text>
       <Text style={styles.cardText}>Temporadas: {temporadas}</Text>
